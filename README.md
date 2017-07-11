@@ -48,7 +48,7 @@ npm info express
 ```
 
 ### Ruby
-* ruby-china
+* ruby-china(原淘宝ruby镜像已停止使用)
 
 ```
 
