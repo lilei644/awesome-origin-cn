@@ -7,10 +7,11 @@
 ## 目录
 - Homebrew
 - npm
+- Ruby
 
 ## 内容
 
-#### Homebrew
+### Homebrew
 * 中科大 
 
 ```
@@ -35,7 +36,7 @@ $ cd /usr/local/Homebrew && git remote set-url origin https://git.coding.net/hom
 $ cd $home && brew update
 ```
 
-#### npm
+### npm
 * 淘宝npm镜像
 
 ```
@@ -44,4 +45,18 @@ npm config set registry https://registry.npm.taobao.org
 npm config get registry
 // 或
 npm info express
+```
+
+### Ruby
+* ruby-china
+
+```
+
+// 移除现有
+$gem sources --remove https://rubygems.org/
+// 添加
+$gem sources -a https://gems.ruby-china.org/
+// 查看验证
+$gem sources -l
+
 ```
