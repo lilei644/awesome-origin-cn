@@ -8,6 +8,7 @@
 - Homebrew
 - npm
 - Ruby
+- Gradle
 
 ## 内容
 
@@ -60,3 +61,22 @@ $gem sources -a https://gems.ruby-china.org/
 $gem sources -l
 
 ```
+
+### Gradle
+* Gradle阿里云maven地址，可用来同步开源库
+
+```
+buildscript {
+	repositories {
+		maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+	}
+}
+
+allprojects {
+	repositories {
+		maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+	}
+}
+
+```
+
